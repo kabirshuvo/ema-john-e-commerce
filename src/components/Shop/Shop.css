@@ -1,0 +1,17 @@
+.shop-container {
+  background-color: rebeccapurple;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+}
+
+.products-container {
+  color: white;
+  padding-left: 3rem;
+  padding-top: 3rem;
+}
+.Cart-container {
+  color: white;
+  padding-right: 3rem;
+  padding-top: 3rem;
+}
