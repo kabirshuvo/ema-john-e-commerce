@@ -7,7 +7,7 @@ const Cart = ({cart}) => {
     let shippingCost =0;
     let quantity = 0;
     for(const product of cart){
-        product.quantity = product.quantity || 1;
+        //product.quantity = product.quantity || 1;
         productTotal = productTotal + product.price *product.quantity ;
         shippingCost = shippingCost + product.shipping;
         quantity = quantity + product.quantity;
