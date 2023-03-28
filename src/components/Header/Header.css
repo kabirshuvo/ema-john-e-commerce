@@ -1,0 +1,16 @@
+.header {
+  background-color: #1c2b35;
+  height: 5rem;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.header-right {
+  margin-right: 3rem;
+}
+.header-right a {
+    margin-right: 3rem;
+}
