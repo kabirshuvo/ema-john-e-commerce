@@ -10,18 +10,27 @@ const Shop = () => {
         fetch('/public/products.json')
         .then(resp => resp.json())
         .then(data => setProducts(data))
-    }, [])
+    }, []);
+
+
+    const [cart, setCart] = useState([]);
+    const addToCart = (product) =>{
+       const newCart = [...cart, product];
+       setCart(newCart);
+    }
     return (
         <div className='
         shop-container'>
             <div className='products-container'>
 {
-            products.map(product => <Product key={product.id} product={product}/>)
+            products.map(product => <Product key={product.id} product={product} addToCart={addToCart}/>)
 
 }
             </div>
             <div className='Cart-container'>
-                Cart
+                <div className='cart-components'>
+                Cart = {cart.length}
+                </div>
             </div>
                   
         </div>

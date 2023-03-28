@@ -12,10 +12,12 @@
   grid-template-columns: repeat(3, 1fr);
 
   grid-gap: 3rem;
-
-  }
+}
 .Cart-container {
   color: white;
   padding-right: 3rem;
   padding-top: 3rem;
+}
+.cart-components {
+  position: fixed;
 }
