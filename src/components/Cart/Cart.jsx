@@ -16,7 +16,9 @@ const Cart = ({cart}) => {
     const tax = productTotal*3.5/100;
     const gradTotal = productTotal + shippingCost + tax;
     
-
+const clearCart = () => {
+    localStorage.clear()
+}
     return (
         <div className='cart-components'>
             <div>
@@ -26,7 +28,7 @@ const Cart = ({cart}) => {
             <p>Shipping Cost : <span className='money-sign'>$</span> {shippingCost.toFixed(2)}</p>
             <p>Tax : <span className='money-sign'>$</span> {tax.toFixed(2)}</p>
             <h5>Grand Total : <span className='money-sign'>$</span> {gradTotal.toFixed(2)}</h5>
-            <button>Clear Cart</button>
+            <button onClick={clearCart}>Clear Cart</button>
             </div>
         </div>
     );
