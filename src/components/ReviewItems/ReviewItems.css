@@ -1,14 +1,44 @@
 .review-itms {
   width: 36rem;
+  height: 5rem;
   border: 1px solid white;
   padding: 0.5rem;
   margin: 1rem;
   border-radius: 1rem;
   color: whitesmoke;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.review-details {
+  flex-grow: 1;
+}
+
+.review-details p {
+  margin: 0 0;
 }
 
 .review-itms img {
   height: 5rem;
   width: 5rem;
   border-radius: 0.5rem;
+}
+
+.review-itms img:hover {
+  scale: 110%;
+}
+
+.orange-text {
+  color: orange;
+}
+
+.btn-delete {
+  border: 0.1px solid white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-delete:hover {
+  border: 0.1px solid royalblue;
+  color: burlywood;
 }
