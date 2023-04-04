@@ -1,0 +1,14 @@
+.review-itms {
+  width: 36rem;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  color: whitesmoke;
+}
+
+.review-itms img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+}
