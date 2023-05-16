@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import Orders from './components/Orders/Orders';
 import Reviews from './components/Reviews/Reviews';
 import Shop from './components/Shop/Shop';
+import SingUp from './components/SignUp/SingUp';
 import './index.css';
 import cartProductsLoader from './loaders/cartProductsLoader';
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "login",
         element: <Login></Login>
+      },
+      {
+        path: 'signup',
+        element: <SingUp></SingUp>
       }
     ]
   },

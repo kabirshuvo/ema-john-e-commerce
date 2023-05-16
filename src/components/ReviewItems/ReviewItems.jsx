@@ -1,7 +1,7 @@
 import React from 'react';
 import './ReviewItems.css';
 const ReviewItems = ({product, handleRemoveFromCart}) => {
-    const {id, img, name, seller, price, quantity, shipping} = product;
+    const {_id, img, name, seller, price, quantity, shipping} = product;
 
 
     return (
@@ -19,7 +19,7 @@ const ReviewItems = ({product, handleRemoveFromCart}) => {
                     </p>
             </div>
             <div>
-            <span onClick={()=>handleRemoveFromCart(id)} className='btn-delete'>delete</span>
+            <span onClick={()=>handleRemoveFromCart(_id)} className='btn-delete'>delete</span>
             </div>
         </div>
     );
